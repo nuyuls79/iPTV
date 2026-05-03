@@ -133,6 +133,7 @@ dependencies {
     implementation(libs.media3.exoplayer.hls)
     implementation(libs.media3.exoplayer.dash)
     implementation(libs.media3.exoplayer.rtsp)
+    implementation(libs.media3.exoplayer.drm)   // ✅ Dukungan DRM (Widevine, PlayReady, ClearKey)
     implementation(libs.media3.datasource.okhttp)
     implementation(libs.media3.ui)
 
@@ -188,4 +189,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
-}
+}}
