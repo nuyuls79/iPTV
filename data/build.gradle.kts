@@ -13,7 +13,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        minSdk = 28
+        minSdk = 23  // ✅ diturunkan dari 28 ke 23
     }
 
     compileOptions {
@@ -85,10 +85,7 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.truth)
     testImplementation(libs.coroutines.test)
-    // kxml2: JVM XmlPullParser implementation needed for XmltvParser unit tests
-    // (Android platform provides its own impl; the JVM test runner needs an explicit one)
     testImplementation(libs.kxml2)
-    // Mocking for SyncManagerTest
     testImplementation(libs.mockito.kotlin)
 
     // Android instrumentation tests
